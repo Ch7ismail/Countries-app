@@ -15,7 +15,6 @@ export default function CountryView() {
     axios.get(`https://restcountries.com/v3.1/name/${name}`)
       .then((response)=>{
           setCountry(response.data);
-          console.log(response.data)
       })
       .catch((error)=>{
           console.log(error);

@@ -44,11 +44,6 @@ export default function DataProvider({children}){
         })
     }
     
-
-//   useEffect(() => {
-//     document.title = `${name}`;
-//   }, [name]);
-
     return(
         <DataContext.Provider value={{query, setQuery, data, fetchData, fetchAllData, filterByRegion}}>
             {children}
